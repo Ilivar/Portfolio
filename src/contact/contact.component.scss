@@ -1,0 +1,15 @@
+#content{
+    margin: 64px;
+    display: flex;
+    flex-direction: column;
+    
+    >#text{
+        display: flex;
+       
+    }
+
+    >#info{
+        display: flex;
+        flex-direction: column;
+    }
+}
