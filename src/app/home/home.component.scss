@@ -1,7 +1,9 @@
 #content {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   color: white;
+  position: relative;
 
   #vertical {
     display: flex;
@@ -9,6 +11,7 @@
     transform-origin: center center;
     white-space: nowrap;
     font-size: 64px;
+    font-weight: 400;
     width: 150px;
     text-align: center;
   }
@@ -17,29 +20,81 @@
     height: auto;
   }
 
-  #info{
+  #info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: 170px;
+
+    button{
+      width: 165px;
+      height: 58px;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 36px;
+      background-color: #00bee8;
+      font-size: 23px;
+      font-weight: 400;
+      cursor: pointer;
+      &:hover{
+        background-color: #9747ff;
+      }
+    }
 
   }
 
-  #name{
+  #images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    #background{
+      z-index: -1;
+      position: absolute;
+      width: 500px;
+    }
+  }
+
+  // #vector{
+  //   position: absolute;
+  //   top: 260px;
+  //   width: 100%;
+  // }
+
+  #name {
     font-size: 90px;
     font-weight: 700;
   }
 
-  #dev{
+  #dev {
     font-size: 58px;
     font-weight: 400;
     color: #9747ff;
   }
 
-  #text{
+  #text {
     display: flex;
     align-items: center;
   }
+}
 
+#links {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  transition: color 0.3s ease-in-out;
+
+  a {
+    text-decoration: none;
+  }
+  
+  .icon {
+    :hover {
+      scale: 1.2;
+    }
+  }
 }

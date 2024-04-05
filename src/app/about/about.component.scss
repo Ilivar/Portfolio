@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
 
+    h1{
+      font-size: 90px;  
+      font-weight: 700;
+    }
 
     >#about{
         width: 340px;
@@ -11,7 +15,9 @@
         width: 450px;
     }
 
-    >.content{
-        
+    #selfi{
+        width: 360px;
+        border: 2px solid #00bedc;
+        border-radius: 50%;
     }
 }
