@@ -15,15 +15,23 @@
         placerat
       </span>
     </div>
-    <div id="input">
-      <input type="text" placeholder="Name" />
-      <input type="text" placeholder="Email" />
-      <input type="text" placeholder="Message" />
-      <div id="check">
-        <input type="checkbox" />
-        <span>Hab den Murks gelesen</span>
-      </div>
-      <button>Send message :)</button>
+    <div class="container">
+      <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    
+        <label for="name"></label>
+        <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
+    
+        <label for="email"></label>
+        <input [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your email.." required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+    
+        <label for="message"></label>
+        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="text" id="message" name="message" placeholder="Write something.." style="height: 200px;" required></textarea>
+        @if(!message.valid && message.touched) {
+          <span>Please enter message</span>
+        }
+        <input type="submit" value="Submit">
+    
+      </form>
     </div>
   </div>
 </div>

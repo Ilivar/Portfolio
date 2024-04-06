@@ -4,7 +4,7 @@
   color: white;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid #70e61c;
+  border-top: 2px solid #00bee8;
   margin-left: 64px;
   margin-right: 64px;
 
@@ -15,6 +15,12 @@
   > #links {
     display: flex;
     gap: 36px;
+
+    img{
+      &:hover {
+        scale: 1.2;
+      }
+    }
 
   }
 }

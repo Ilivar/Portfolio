@@ -1,10 +1,21 @@
 <div id="content">
-    <div id="icons">
-        <img src="./../assets/img/icons/" alt="icon1">
+  <div id="icons">
+    @for (name of skillName; track $index){
+    <div id="icon">
+      <img
+        src="./../../assets/img/icons/skills/skill_{{ $index }}.png"
+        alt="{{ name }}"
+      />
+      <span>{{ name }}</span>
     </div>
-    <div id="text">
-        <h1>My skills</h1>
-        <span>Ich habs voll drauf!</span>
-        <button>Get in touch</button>
-    </div>
+    }
+  </div>
+  <div id="text">
+    <h1>My skills</h1>
+    <span
+      >I have enhanced my frontend development skills, allowing me to create
+      various real projects.</span
+    >
+    <button>Get in touch</button>
+  </div>
 </div>
