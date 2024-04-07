@@ -8,10 +8,11 @@
   margin-right: 64px;
   
   a {
+    font-size: 24px;
     text-decoration: none;
     color: white;
-    margin-right: 16px;
     transition: color 0.1s ease-in-out;
+    margin-right: 48px;
     
     &:hover{
       color: #00bee8;

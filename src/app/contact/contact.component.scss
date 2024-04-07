@@ -1,80 +1,96 @@
-#content{
-    margin: 64px;
+#content_contact {
+ 
+  display: flex;
+  flex-direction: column;
+
+  #head{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+
+  h1{
+    font-size: 90px;
+  }
+
+  > #text {
+    display: flex;
+  }
+
+  #info {
     display: flex;
     flex-direction: column;
-    
-    >#text{
-        display: flex;
-       
+    width: 30%;
+  }
+
+  input,
+  textarea {
+    color: black;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  }
+
+  #text {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    margin-bottom: 104px;
+
+    input,
+    textarea {
+      background-color: transparent;
+      border: 2px solid #4b47ff;
+      border-radius: 10px;
+      height: 50px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 400;
+      color: white;
+      padding-left: 16px;
+      outline: none;
+
+      &:focus {
+        border: #00bee8 solid 2px;
+      }
     }
 
-    #info{
-        display: flex;
-        flex-direction: column;
-        width: 30%;
+    #check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      #box {
+        width: 16px;
+        background-color: #4b47ff;
+        border-color: #00bee8;
+      }
+
+      a {
+        text-decoration: none;
+        color: #4b47ff;
+      }
     }
 
-    input, textarea{
-        color: black;
+    #button {
+      background-color: #b6b6b6;
+      width: 250px;
+      height: 60px;
+      color: white;
+      font-size: 23px;
+      font-weight: 400;
+      cursor: pointer;
     }
-
-    .container{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 50%;
-    }
-
-    #text{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    form{
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        width: 100%;
-        
-        input, textarea{
-            background-color: transparent;
-            border: 2px solid #4b47ff;
-            border-radius: 10px;
-            height: 50px;
-            width: 100%;
-            font-size: 16px;
-            font-weight: 400;
-            color: white;
-            padding-left: 16px;
-            
-            &:focus{
-                border-color: #00bee8;
-            }   
-        }
-
-        #check{
-            display: flex;
-
-           #box{
-            width: 16px;
-            background-color: #4b47ff;
-            border-color: #00bee8;
-           }
-
-           a{
-            text-decoration: none;
-            color: #4b47ff;
-           }
-
-        }
-
-        #button{
-            background-color: #b6b6b6;
-            width: 250px ;
-            height: 60px;
-            color: white;
-            font-size: 23px;
-            font-weight: 400;
-        }
-    }
+  }
 }

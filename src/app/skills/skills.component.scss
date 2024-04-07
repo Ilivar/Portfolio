@@ -1,13 +1,14 @@
-#content {
-  margin-top: 160px;
+#content_skills {
+
   display: flex;
   justify-content: space-evenly;
 
   #icons {
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap;
+    margin-top: 160px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 Elemente pro Zeile */
     gap: 80px;
+    margin-bottom: 160px;
 
     img {
       width: 60px;
@@ -56,6 +57,7 @@
       width: 200px;
       height: 60px;
       border-radius: 10px;
+      border: none;
       margin-top: 64px;
       margin-left: auto;
       margin-right: auto;

@@ -1,5 +1,8 @@
-<div id="content">
-  <h1>Contact</h1>
+<div id="content_contact">
+  <div id="head">
+    <img src="./../../assets/img/LINE 5.svg" alt="">
+    <h1>Contact</h1>
+  </div>
   <div id="text">
     <div id="info">
       <h2>Got a problem to solve?</h2>
@@ -17,7 +20,6 @@
     </div>
     <div class="container">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <label for="name"></label>
         <input
           [(ngModel)]="contactData.name"
           type="text"
@@ -27,7 +29,6 @@
           required
         />
 
-        <label for="email"></label>
         <input
           [(ngModel)]="contactData.email"
           type="text"
@@ -38,7 +39,6 @@
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
 
-        <label for="message"></label>
         <textarea
           #message="ngModel"
           minlength="4"
@@ -54,7 +54,7 @@
         <span>Please enter message</span>
         }
         <div id="check">
-          <input id="box" type="checkbox"  required/>
+          <input id="box" type="checkbox" required />
           <span
             >I´ve read the <a href="#">privacy policy</a> of my data as
             outlined.

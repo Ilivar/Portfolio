@@ -1,4 +1,4 @@
-#content{
+#content_about{
     display: flex;
     align-items: center;
 
@@ -37,11 +37,13 @@
         position: relative;
         margin-left: 30%;
 
+
         #background{
             position: absolute;
             z-index: -1;
             top: -300px;
             left: 300px;
+            
         }
 
         #line{
