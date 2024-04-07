@@ -19,7 +19,7 @@ export class ContactComponent {
 
   http = inject(HttpClient);
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://giuliano-gioia.com/sendMail.php',
@@ -39,6 +39,7 @@ export class ContactComponent {
           next: (response) => {
 
             ngForm.resetForm();
+            console.log(response);
           },
           error: (error) => {
             console.error(error);
@@ -46,7 +47,7 @@ export class ContactComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      console.log('mail test');
       ngForm.resetForm();
     }
   }

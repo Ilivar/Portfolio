@@ -17,20 +17,50 @@
     </div>
     <div class="container">
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-    
         <label for="name"></label>
-        <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name.." required>
-    
+        <input
+          [(ngModel)]="contactData.name"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name.."
+          required
+        />
+
         <label for="email"></label>
-        <input [(ngModel)]="contactData.email" type="text" id="email" name="email" placeholder="Your email.." required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-    
+        <input
+          [(ngModel)]="contactData.email"
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Your email.."
+          required
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+        />
+
         <label for="message"></label>
-        <textarea #message="ngModel" minlength="4" [(ngModel)]="contactData.message" type="text" id="message" name="message" placeholder="Write something.." style="height: 200px;" required></textarea>
+        <textarea
+          #message="ngModel"
+          minlength="4"
+          [(ngModel)]="contactData.message"
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Write something.."
+          style="height: 200px"
+          required
+        ></textarea>
         @if(!message.valid && message.touched) {
-          <span>Please enter message</span>
+        <span>Please enter message</span>
         }
-        <input type="submit" value="Submit">
-    
+        <div id="check">
+          <input id="box" type="checkbox"  required/>
+          <span
+            >I´ve read the <a href="#">privacy policy</a> of my data as
+            outlined.
+          </span>
+        </div>
+        <input id="button" type="submit" value="Send message :)" />
       </form>
     </div>
   </div>

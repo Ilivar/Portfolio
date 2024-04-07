@@ -14,6 +14,8 @@
     font-weight: 400;
     width: 150px;
     text-align: center;
+    margin-bottom: 112px;
+    margin-right: -36px;
   }
   img {
     width: 360px;
@@ -29,14 +31,14 @@
 
     button{
       width: 165px;
-      height: 58px;
+      height: 60px;
+      padding: 8px 0px;
       border-radius: 10px;
       margin-left: auto;
       margin-right: auto;
       margin-top: 36px;
       background-color: #00bee8;
       font-size: 23px;
-      font-weight: 400;
       cursor: pointer;
       &:hover{
         background-color: #9747ff;
@@ -44,6 +46,7 @@
     }
 
   }
+
 
   #images{
     display: flex;
@@ -58,7 +61,7 @@
     #background{
       z-index: -3;
       position: absolute;
-      width: 500px;
+      width: 800px;
     }
   }
 
@@ -72,10 +75,11 @@
   #name {
     font-size: 90px;
     font-weight: 700;
+    margin: -32px 0px;
   }
 
   #dev {
-    font-size: 58px;
+    font-size: 60px;
     font-weight: 400;
     color: #9747ff;
   }
@@ -101,5 +105,18 @@
     :hover {
       scale: 1.2;
     }
+  }
+}
+
+#scroll{
+  display: flex;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0;
+  font-size: 23px;
+  gap: 8px;
+
+  #arrow{
+    transform: rotate(270deg);
   }
 }
