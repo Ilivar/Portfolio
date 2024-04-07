@@ -1,0 +1,65 @@
+#content {
+  margin-bottom: 104px;
+  #head {
+    display: flex;
+    justify-content: right;
+    gap: 36px;
+
+    h1 {
+      font-size: 90px;
+      font-weight: 700;
+    }
+  }
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 104px;
+
+  h2 {
+    font-size: 32px;
+    color: #4b47ff;
+  }
+
+  .used {
+    color: #00bee8;
+    font-size: 24px;
+    margin: 12px 0;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 30%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 80px;
+    margin-top: 24px;
+  }
+
+  button {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    &:hover {
+      background-color: #00bee8;
+    }
+  }
+
+  .git {
+    background-color: transparent;
+    border: #00bee8 solid 2px;
+  }
+
+  .test {
+    background-color: #4b47ff;
+    border: none;
+  }
+}

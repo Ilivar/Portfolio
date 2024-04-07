@@ -9,10 +9,11 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule, FooterComponent, HeaderComponent, HomeComponent,AboutComponent, SkillsComponent, PortfolioComponent, ContactComponent],
+  imports: [RouterOutlet, CommonModule, FooterComponent, HeaderComponent, HomeComponent,AboutComponent, SkillsComponent, ContactComponent, PortfolioComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
