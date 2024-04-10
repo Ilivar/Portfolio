@@ -17,7 +17,7 @@ export class SkillsComponent {
     'Firebase',
     'GIT',
     'Rest-Api',
-    'Material design',
+    'Material Design',
     'Scrum',
   ];
 }
