@@ -1,11 +1,22 @@
+body{
+  width: 100%;
+  position: relative;
+}
+
 #content {
   height: 110px;
   display: flex;
   justify-content: space-between;
   color: white;
   align-items: center;
-  margin-left: 64px;
-  margin-right: 64px;
+  padding-right: 64px;
+  padding-left: 64px;
+  margin-bottom: 72px;
+  position: sticky;
+  top: 0;
+  background-color: #141d2f;
+  z-index: 100;
+
   
   a {
     font-size: 24px;

@@ -1,56 +1,65 @@
-#content_about{
+#content_about {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+
+  #background {
+    position: absolute;
+    right: -400px;
+    top: -140px;
+    z-index: -1;
+    scale: 0.7;
+  }
+
+  h1 {
+    font-size: 90px;
+    font-weight: 700;
+  }
+
+  #about {
+    width: 30%;
+    margin: 64px;
+    position: relative;
+
+    .section {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+  }
+
+  #selfi {
+    height: 360px;
+    width: 360px;
+    border: 4px solid #00bedc;
+    border-radius: 50%;
+    background-image: url(./../../assets/img/selfi.png);
+    background-size: 260px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #images {
     display: flex;
-    align-items: center;
+    position: relative;
+    margin-left: 30%;
 
-    h1{
-      font-size: 90px;  
-      font-weight: 700;
+    #bg_container {
+      position: absolute;
+      z-index: -1;
+      top: -300px;
+      right: -72%;
+      overflow: hidden;
+      width: 300px;
     }
 
-    >#about{
-       width: 30%;
-        margin: 64px;
-
-        
-
-        .section{
-            margin-top: 32px;
-            display: flex;
-            align-items: center;
-            gap: 32px;
-        }
+    #line {
+      position: absolute;
+      left: 364px;
+      top: 170px;
     }
-
-    #selfi{
-       height: 360px;
-        width: 360px;
-        border: 4px solid #00bedc;
-        border-radius: 50%;
-        background-image: url(./../../assets/img/selfi\ \(1\).png);
-        background-size: 260px;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    #images{
-        display: flex;
-        position: relative;
-        margin-left: 30%;
-
-        #bg_container{
-            position: absolute;
-            z-index: -1;
-            top: -300px;
-            right: -72%;
-            overflow: hidden;
-            width: 300px;
-        }
-  
-        #line{
-            position: absolute;
-            left: 364px;
-            top: 170px;
-        }
-
-    }
+  }
 }

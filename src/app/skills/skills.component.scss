@@ -1,7 +1,13 @@
 #content_skills {
-
+ position: relative;
   display: flex;
   justify-content: space-evenly;
+
+ #background{
+  position: absolute;
+  left: -280px;
+  z-index: -1;
+ }
 
   #icons {
     margin-top: 160px;
