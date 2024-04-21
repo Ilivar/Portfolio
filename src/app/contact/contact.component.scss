@@ -73,8 +73,9 @@
       color: white;
       padding-left: 16px;
       outline: none;
+      cursor: pointer;
 
-      &:focus {
+      &:hover{
         border: #00bee8 solid 2px;
       }
     }
@@ -107,4 +108,32 @@
       align-self: center;
     }
   }
+}
+
+.alert{
+  color: red;
+}
+
+.is_valid{
+  border-color: green !important;
+  background-image: url(./../../assets/img/icons/valid.png);
+  background-repeat: no-repeat;
+  background-position: right 12px top 12px;
+}
+
+.is_invalid{
+  border-color: red !important;
+  background-image: url(./../../assets/img/icons/invalid.png);
+  background-repeat: no-repeat;
+  background-position: right 12px top 12px;
+}
+
+.active_button {
+  background-color: #00bee8 !important;
+  color: white;
+}
+
+#button:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.5 !important;
 }
